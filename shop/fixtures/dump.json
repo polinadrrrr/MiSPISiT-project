@@ -1,0 +1,122 @@
+[
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$720000$5kGRHLnzbrWFNv2tH1M1ks$A3s1H2RwhJ3zPG9730XLJW6kDGVEE9SjAb7pw20VDVg=",
+    "last_login": "2023-12-18T09:39:48.053Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "poliandrrrr@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-12-17T16:19:49.715Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$720000$u9xdnsQ6g4IzAiWnzxruqm$H32w3t6RxvDGjPFRIDbuXeqGj9LrLzaA/zbd3UPo7fY=",
+    "last_login": "2023-12-18T07:44:28.029Z",
+    "is_superuser": false,
+    "username": "user_abuser",
+    "first_name": "",
+    "last_name": "",
+    "email": "user@buser.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-12-18T07:44:25.697Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$720000$qoKZOFFjhJXennS3aVwJY4$c+bR3nUIJs99CIlgDwZBqyCRDAAdnmbVJ1OI9bnYIrM=",
+    "last_login": "2023-12-18T08:01:03.135Z",
+    "is_superuser": false,
+    "username": "poliandrias",
+    "first_name": "",
+    "last_name": "",
+    "email": "pol@vtorogo.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-12-18T08:01:00.592Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "rp7chw8itmqiav0q6sj41e2zvtlhq712",
+  "fields": {
+    "session_data": ".eJxVjMEOwiAQRP-FsyG0UKAevfcbyC67SNVAUtqT8d9tkx70Npn3Zt4iwLbmsDVewkziKjpx-e0Q4pPLAegB5V5lrGVdZpSHIk_a5FSJX7fT_TvI0PK-7ju0HA1x0iOjdx706JNhO0QyXa9w9HsgrYld7zQk5dACDz4NUSGS-HwB_Rg4zQ:1rFA6G:m_FhoTdKXnV_G_toYctumzK438NL-MBw6j4YnMXHOBI",
+    "expire_date": "2024-01-01T09:39:48.250Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 1,
+  "fields": {
+    "name": "Pillow",
+    "code": "123",
+    "price": "500.00",
+    "unit": null,
+    "image_url": null,
+    "note": ""
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 2,
+  "fields": {
+    "name": "Big pillow",
+    "code": "124",
+    "price": "1000.00",
+    "unit": null,
+    "image_url": null,
+    "note": ""
+  }
+},
+{
+  "model": "shop.payment",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "user_abuser"
+    ],
+    "amount": "1500.00",
+    "time": "2023-12-18T09:51:26.030Z",
+    "comment": ""
+  }
+},
+{
+  "model": "shop.order",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "user_abuser"
+    ],
+    "status": "3_paid",
+    "amount": "1500.00",
+    "creation_time": "2023-12-18T09:52:12.495Z",
+    "payment": 1,
+    "comment": ""
+  }
+},
+{
+  "model": "shop.orderitem",
+  "pk": 1,
+  "fields": {
+    "order": 1,
+    "product": 1,
+    "quantity": 3,
+    "price": "1500.00",
+    "discount": "0.00"
+  }
+}
+]
